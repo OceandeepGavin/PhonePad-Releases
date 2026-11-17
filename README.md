@@ -6,8 +6,8 @@
 
 手机首次安装 APK，之后在 App 的连接设置中点“检查更新”。最低 Android 9，需要系统支持 Bluetooth HID Device。当前为测试版。
 
-## 手机扫码安装 0.4.1
+## 手机扫码安装 0.5.0
 
-![PhonePad 0.4.1 APK 下载二维码](./PhonePad-0.4.1-QR.png)
+![PhonePad 0.5.0 APK 下载二维码](./PhonePad-0.5.0-QR.png)
 
 [电脑端使用说明](./Windows-README.md)
