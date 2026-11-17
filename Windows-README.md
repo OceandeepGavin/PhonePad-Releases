@@ -1,8 +1,8 @@
-# PhonePad Windows Xbox 后台连接程序 0.4 一体安装测试版
+# PhonePad Windows Xbox 后台连接程序 0.5 一体安装测试版
 
 适用 Windows 10/11 x64。手机使用 PhonePad，通过原有蓝牙 HID 连接；不需要改用 Wi-Fi。
 
-1. 电脑下载并运行 **PhonePad-Windows-Setup-0.4.exe**。一个文件内置官方 ViGEmBus、HidHide 驱动和后台程序，无需另行下载驱动。
+1. 电脑下载并运行 **PhonePad-Windows-Setup-0.5.exe**。一个文件内置官方 ViGEmBus、HidHide 驱动和后台程序，无需另行下载驱动。
 2. 按安装向导操作。安装缺少的驱动时，确认 Windows 管理员授权；已有驱动自动跳过。后台程序和自动启动配置属于当前登录用户。
 3. 如果首次安装了驱动，请保存工作并重启电脑一次。安装器不会自动重启，后台程序在重启登录后自动运行。
 4. 以后只需在手机打开 PhonePad 并蓝牙连接电脑，自动提供 Xbox 输入并隐藏原始 PhonePad，防止重复响应。
@@ -23,3 +23,10 @@ ViGEmBus 已停止维护：https://docs.nefarius.at/projects/ViGEm/End-of-Life/ 
 开发验证：PhonePadBridge.Check.exe --self-test / --probe-driver / --verify-live。开发源码与诊断工具不包含在独立安装器中。
 
 一体安装器已验证签名、嵌入驱动 SHA256、构建和已有驱动机器上的重复安装/自动启动。尚未在缺少两个驱动的全新电脑完成安装验收。
+
+## 出现输入问题时复原
+桌面或开始菜单打开“PhonePad 恢复原有输入”，点击“恢复原有输入”。也可以单独下载 PhonePad-Recovery.exe 使用。
+工具会停止 PhonePad、取消其自动启动，并撤销它记录的原始手柄隐藏规则。不会重置其他应用的隐藏列表。
+两个共享驱动不会自动删除。如果怀疑驱动本身有兼容问题，用工具中的“打开系统卸载列表”单独卸载 HidHide / Nefarius Virtual Gamepad Emulation Bus，然后按系统提示重启；这可能影响其他依赖这些驱动的软件。
+恢复工具不是整台电脑的系统还原，不撤销其他软件或此前单独安装的 Game Bar。需要重新启用 PhonePad 时，再运行一体安装包。
+已通过编译、启动项归属检查和当前配置只读检查；未在用户当前正常使用的电脑执行破坏性回退实测。
