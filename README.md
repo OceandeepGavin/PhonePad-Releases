@@ -2,7 +2,7 @@
 
 [下载手机 APK 和 Windows 安装器](https://github.com/OceandeepGavin/PhonePad-Releases/releases/latest)
 
-电脑首次运行 **PhonePad-Windows-Setup-0.4.exe** 一次安装后台程序和两个内置驱动，无需分别下载；按提示确认 Windows 授权，首次装驱动后重启一次。以后只需手机打开 App 并蓝牙连接电脑，自动获得 Xbox/XInput 输入，电脑无需再点按钮。后台程序在电脑登录后自动启动。
+电脑首次运行 **PhonePad-Windows-Setup-0.5.exe** 一次安装后台程序和两个内置驱动，无需分别下载；按提示确认 Windows 授权，首次装驱动后重启一次。以后只需手机打开 App 并蓝牙连接电脑，自动获得 Xbox/XInput 输入，电脑无需再点按钮。后台程序在电脑登录后自动启动。
 
 手机首次安装 APK，之后在 App 的连接设置中点“检查更新”。最低 Android 9，需要系统支持 Bluetooth HID Device。当前为测试版。
 
@@ -11,3 +11,6 @@
 ![PhonePad 0.5.0 APK 下载二维码](./PhonePad-0.5.0-QR.png)
 
 [电脑端使用说明](./Windows-README.md)
+
+
+出现输入异常可下载 PhonePad-Recovery.exe，或打开安装包附带的“恢复原有输入”。
